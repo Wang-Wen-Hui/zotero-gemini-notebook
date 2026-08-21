@@ -415,8 +415,7 @@ function isNotebookDetailPage(url = window.location.href) {
     return (
       ["notebook.google.com", "notebooklm.google.com"].includes(
         parsed.hostname,
-      ) &&
-      parsed.pathname.startsWith("/notebook/")
+      ) && parsed.pathname.startsWith("/notebook/")
     );
   } catch {
     return false;
